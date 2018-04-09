@@ -1,0 +1,148 @@
+doctype html
+head
+    title Merlin's Potions
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Oswald:200,500" rel="stylesheet")
+    link(rel="stylesheet" href="css/animate.min.css")
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    
+body
+    header
+        .container
+            .row
+                .col-md-4
+                    h1 Merlin's 
+                        span(style="font-weight:lighter;") Potions
+                    span.text-center.h1-span ---- Fine potions since 1026 ---
+                .col-md-4
+                    form(method="post" action="#")
+                        input(type="search" placeholder="search our stock")
+                        button(type="submit") 
+                            i(class="fas fa-search")
+                .col-md-4.order
+                    .row
+                        .col-md-6
+                            h2 Free shiping
+                                br
+                                span on ordes over $50
+                        .col-md-6
+                            img(src="img/icon.png" alt="icon")
+                            span(style="color:#b3b3b3;margin-left:12px;text-transform:uppercase") bag:
+                            span(style="color:#d6391e;margin-left:8px;") 1
+    nav
+        .container
+            .row
+                .col-md-8
+                    ul.d-flex
+                        li 
+                            a(href="#") Potions
+                            i(class="fas fa-sort-down")
+                        li 
+                            a(href="#") Inredients
+                            i(class="fas fa-sort-down")
+                        li 
+                            a(href="#") Books
+                            i(class="fas fa-sort-down")
+                        li 
+                            a(href="#") Supplies
+                            i(class="fas fa-sort-down")
+                        li 
+                            a(href="#") Charms
+                            i(class="fas fa-sort-down")
+                        li.active 
+                            a(href="#") Clearence!
+                .col-md-4.d-flex.justify-content-center
+                    ul.d-flex
+                        li(style="margin:0") 
+                            a(href="#") Charms
+                        li(style="margin:0 1px !important;opacity:0.4;") or
+                        li(style="margin:0") 
+                            a(href="#") Clearence!
+                            
+    section.potions.my-5
+        .container
+            h2.mb-5 Potions
+            .row
+                .col-md-4
+                    img.img-fluid(src="img/products/aging-potion.png" alt="potion")
+                    p.text-center Aging Potion - 
+                        span $19,99
+                .col-md-4
+                    img.img-fluid(src="img/products/bulgeye-potion.png" alt="potion")
+                    p.text-center Bulgeye Potion -
+                        span $19,99
+                .col-md-4
+                    img.img-fluid(src="img/products/dragon-tonic.png" alt="potion")
+                    p.text-center Dragon Tonic -
+                        span $19,99
+            .row
+                .col-md-4
+                    img.img-fluid(src="img/products/love-potion.png" alt="potion")
+                    p.text-center Love Potion -
+                        span $19,99
+                .col-md-4
+                    img.img-fluid(src="img/products/polyjuice-potion.png" alt="potion")
+                    p.text-center PolyJuice Potion -
+                        span $19,99
+                .col-md-4
+                    img.img-fluid(src="img/products/sleeping-draught.png" alt="potion") 
+                    p.text-center Sleeping Draught -
+                        span $19,99
+            
+    
+    footer
+        .container
+            .row
+                .col-md-6
+                    ul.d-flex.links
+                        li 
+                            a(href="#")
+                                |Company
+                                br
+                                |Returns
+                        li 
+                            a(href="#") 
+                                |Contact 
+                                br
+                                |us
+                        li 
+                            a(href="#") Shipping
+                    ul.social.d-flex
+                        li
+                            a(href="#")
+                                img(src="img/facebook.jpg" alt="rede social")
+                        li
+                            a(href="#")
+                                img(src="img/twitter.jpg" alt="rede social")
+                        li
+                            a(href="#")
+                                img(src="img/print.jpg" alt="rede social")
+                        li
+                            a(href="#")
+                                img(src="img/tumblr.jpg" alt="rede social")
+                        li
+                            a(href="#")
+                                img(src="img/google.jpg" alt="rede social")
+                                    
+                    p(style="color:grey; margin-top:50px") &copy; 2015 Merlin's Potion. All rights Reserved
+                .col-md-6
+                    div.rounded(style="background:white;padding:1.5rem;")
+                        p Sign up for our Newsletter
+                        p Sign up for our newsletter & get exclusive discounts!
+                        form(method="post" action="#")
+                            input(type="email" name="email" placeholder="Enter your email")
+                            input.rounded(type="submit" value="submit")
+
+
+    script(src="js/jquery.min.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    script(src="js/script.js")
+    script(src="js/jquery.min.js")
+    script(src="js/wow.min.js")
+    script new WOW().init();
+        
+    
+                        
+            
