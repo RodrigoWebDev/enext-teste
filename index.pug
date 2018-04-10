@@ -4,90 +4,147 @@ head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(href="https://fonts.googleapis.com/css?family=Oswald:200,500" rel="stylesheet")
-    link(rel="stylesheet" href="css/animate.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css")
     link(rel="stylesheet" href="css/bootstrap.min.css")
     link(rel="stylesheet" href="css/style.css")
     
 body
+    .lightbox
+        .content.text-center.text-md-left
+            i.icon-close
+            .row
+                .col-sm-8
+                    img.img-fluid.d-block.mx-auto(src="img/products/aging-potion.png" alt="produto")
+                .col-sm-4
+                    h2 Titulo
+                    h2 Use/Effect:
+                    p Lorem ipsum dolor
+                    h2 igredients
+                    p lorem
+                    p lorem
+                    p lorem
+                    p lorem
+                    p lorem
+                    h2 Price:
+                    span $29,99
+                    button.mt-3.rounded Add to cart
+                    
+    
     header
         .container
             .row
-                .col-md-4
-                    h1 Merlin's 
-                        span(style="font-weight:lighter;") Potions
-                    span.text-center.h1-span ---- Fine potions since 1026 ---
-                .col-md-4
+                .col-2.d-flex.justify-content-center.align-items-center.d-lg-none
+                    i.icon-menu
+                .col-8.col-lg-4
+                    img.logo.responsive(src="img/logo.jpg" alt="logo")
+                .col-lg-4.d-none.d-lg-block
                     form(method="post" action="#")
                         input(type="search" placeholder="search our stock")
                         button(type="submit") 
-                            i(class="fas fa-search")
-                .col-md-4.order
+                            i.icon-magnifier
+                .col-2.col-lg-4
                     .row
-                        .col-md-6
+                        .col-lg-6.d-none.d-lg-block.order
                             h2 Free shiping
                                 br
                                 span on ordes over $50
-                        .col-md-6
+                        .col-12.col-lg-6.d-flex.d-md-block.flex-column.align-items-center.bag
                             img(src="img/icon.png" alt="icon")
-                            span(style="color:#b3b3b3;margin-left:12px;text-transform:uppercase") bag:
-                            span(style="color:#d6391e;margin-left:8px;") 1
-    nav
+                            span(style="color:#b3b3b3;text-transform:uppercase") bag:
+                                span(style="color:#d6391e;margin-left:8px;") 1
+    
+    section.d-block.d-lg-none(style="background:#e6e6e6;color:grey;padding:5px 0;")
+        .container
+            p.text-center.m-0.font-italic Free shipping on orders over $50
+        
+        
+        
+        
+    div.drop-mobile
+            div.d-flex.justify-content-between
+                i.icon-close
+                form(method="post" action="#")
+                    input(type="search" placeholder="search our stock")
+                    button(type="submit") 
+                        i.icon-magnifier
+            ul
+                li 
+                    a(href="#") Potions
+                li 
+                    a(href="#") Inredients
+                li 
+                    a(href="#") Books
+                li 
+                    a(href="#") Supplies
+                li 
+                    a(href="#") Charms
+                li.active 
+                    a(href="#") Clearence!
+            .d-flex.justify-content-center(style="background: #513367;")
+                    ul.d-flex
+                        li(style="margin:0;border:none;") 
+                            a(href="#") Sign in
+                        li(style="margin:0 10px !important;opacity:0.4;color:white;border:none;") 
+                            a or
+                        li(style="margin:0;border:none;") 
+                            a(href="#") Sign out
+                    
+    nav.d-none.d-lg-block
         .container
             .row
                 .col-md-8
                     ul.d-flex
                         li 
                             a(href="#") Potions
-                            i(class="fas fa-sort-down")
+                            i.icon-arrow-down
                         li 
                             a(href="#") Inredients
-                            i(class="fas fa-sort-down")
+                            i.icon-arrow-down
                         li 
                             a(href="#") Books
-                            i(class="fas fa-sort-down")
+                            i.icon-arrow-down
                         li 
                             a(href="#") Supplies
-                            i(class="fas fa-sort-down")
+                            i.icon-arrow-down
                         li 
                             a(href="#") Charms
-                            i(class="fas fa-sort-down")
+                            i.icon-arrow-down
                         li.active 
                             a(href="#") Clearence!
                 .col-md-4.d-flex.justify-content-center
                     ul.d-flex
-                        li(style="margin:0") 
-                            a(href="#") Charms
+                        li(style="margin:0;") 
+                            a(href="#") Sign In
                         li(style="margin:0 1px !important;opacity:0.4;") or
-                        li(style="margin:0") 
-                            a(href="#") Clearence!
+                        li(style="margin:0;") 
+                            a(href="#") Sign out
                             
     section.potions.my-5
         .container
-            h2.mb-5 Potions
+            h2.mb-5.text-center.text-md-left Potions
             .row
-                .col-md-4
-                    img.img-fluid(src="img/products/aging-potion.png" alt="potion")
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/aging-potion.png" alt="potion")
                     p.text-center Aging Potion - 
                         span $19,99
-                .col-md-4
-                    img.img-fluid(src="img/products/bulgeye-potion.png" alt="potion")
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/bulgeye-potion.png" alt="potion")
                     p.text-center Bulgeye Potion -
                         span $19,99
-                .col-md-4
-                    img.img-fluid(src="img/products/dragon-tonic.png" alt="potion")
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/dragon-tonic.png" alt="potion")
                     p.text-center Dragon Tonic -
                         span $19,99
-            .row
-                .col-md-4
-                    img.img-fluid(src="img/products/love-potion.png" alt="potion")
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/love-potion.png" alt="potion")
                     p.text-center Love Potion -
                         span $19,99
-                .col-md-4
-                    img.img-fluid(src="img/products/polyjuice-potion.png" alt="potion")
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/polyjuice-potion.png" alt="potion")
                     p.text-center PolyJuice Potion -
                         span $19,99
-                .col-md-4
-                    img.img-fluid(src="img/products/sleeping-draught.png" alt="potion") 
+                .col-6.col-md-4.my-3
+                    img.product(src="img/products/sleeping-draught.png" alt="potion") 
                     p.text-center Sleeping Draught -
                         span $19,99
             
@@ -95,8 +152,8 @@ body
     footer
         .container
             .row
-                .col-md-6
-                    ul.d-flex.links
+                .col-md-6.order-2.order-md-1
+                    ul.d-none.d-md-flex.links
                         li 
                             a(href="#")
                                 |Company
@@ -109,7 +166,7 @@ body
                                 |us
                         li 
                             a(href="#") Shipping
-                    ul.social.d-flex
+                    ul.social.d-flex.mt-3
                         li
                             a(href="#")
                                 img(src="img/facebook.jpg" alt="rede social")
@@ -126,23 +183,20 @@ body
                             a(href="#")
                                 img(src="img/google.jpg" alt="rede social")
                                     
-                    p(style="color:grey; margin-top:50px") &copy; 2015 Merlin's Potion. All rights Reserved
-                .col-md-6
+                    p(class="copy text-md-left text-center") &copy; 2015 Merlin's Potion. All rights Reserved
+                .col-md-6.order-1.order-md-2
                     div.rounded(style="background:white;padding:1.5rem;")
                         p Sign up for our Newsletter
                         p Sign up for our newsletter & get exclusive discounts!
                         form(method="post" action="#")
-                            input(type="email" name="email" placeholder="Enter your email")
-                            input.rounded(type="submit" value="submit")
+                            .row
+                                .col-8.col-md-8
+                                    input(type="email" name="email" placeholder="Enter your email")
+                                .col-4.col-md-4
+                                    input.rounded.button(type="submit" value="submit")
 
 
-    script(src="js/jquery.min.js")
-    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
     script(src="js/script.js")
-    script(src="js/jquery.min.js")
-    script(src="js/wow.min.js")
-    script new WOW().init();
-        
     
                         
             
