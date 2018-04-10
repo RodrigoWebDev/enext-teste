@@ -14,19 +14,16 @@ body
             i.icon-close
             .row
                 .col-sm-8
-                    img.img-fluid.d-block.mx-auto(src="img/products/aging-potion.png" alt="produto")
+                    img#image.img-fluid.d-block.mx-auto(src="img/products/aging-potion.png" alt="produto")
                 .col-sm-4
-                    h2 Titulo
+                    h2 sdsa 
                     h2 Use/Effect:
-                    p Lorem ipsum dolor
+                    p ${effect}
+                    h2 
                     h2 igredients
-                    p lorem
-                    p lorem
-                    p lorem
-                    p lorem
-                    p lorem
+                    ul    
                     h2 Price:
-                    span $29,99
+                    span#price ${price}
                     button.mt-3.rounded Add to cart
                     
     
@@ -125,28 +122,35 @@ body
             .row
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/aging-potion.png" alt="potion")
-                    p.text-center Aging Potion - 
-                        span $19,99
+                    p.text-center.name 
+                    p.text-center.price  
+                    p.effect.d-none
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/bulgeye-potion.png" alt="potion")
-                    p.text-center Bulgeye Potion -
-                        span $19,99
+                    p.text-center.name
+                    p.text-center.price
+                    p.effect.d-none
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/dragon-tonic.png" alt="potion")
-                    p.text-center Dragon Tonic -
-                        span $19,99
+                    p.text-center.name 
+                    p.text-center.price 
+                    p.effect.d-none
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/love-potion.png" alt="potion")
-                    p.text-center Love Potion -
-                        span $19,99
+                    p.text-center.name
+                    p.text-center.price
+                    p.effect.d-none
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/polyjuice-potion.png" alt="potion")
-                    p.text-center PolyJuice Potion -
-                        span $19,99
+                    p.text-center.name
+                    p.text-center.price 
+                    p.effect.d-none
                 .col-6.col-md-4.my-3
                     img.product(src="img/products/sleeping-draught.png" alt="potion") 
-                    p.text-center Sleeping Draught -
-                        span $19,99
+                    p.text-center.name
+                    p.text-center.price
+                    p.effect.d-none
+                    ul.ingr
             
     
     footer
@@ -194,9 +198,11 @@ body
                                     input(type="email" name="email" placeholder="Enter your email")
                                 .col-4.col-md-4
                                     input.rounded.button(type="submit" value="submit")
-
-
+                                    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")                                
     script(src="js/script.js")
+    
+    
     
                         
             
