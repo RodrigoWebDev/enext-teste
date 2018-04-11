@@ -1,0 +1,59 @@
+/*HEADER*/
+
+header {
+    padding: 2rem 0;
+    .icon-menu {
+        color: $purple;
+        font-size: 40px;
+
+    }
+
+    .icon-menu:hover {
+        @include hover;
+    }
+
+    img.logo:hover {
+        @include hover;
+    }
+
+    img.logo {
+        @include image-center;
+    }
+
+    input {
+        @include input;
+    }
+
+    .bag span {
+        margin-left: 12px;
+    }
+
+    .bag img {
+        width: 39px;
+        height: 42px;
+    }
+
+    button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 18px;
+        left: 30px;
+        cursor: pointer;
+        .icon-magnifier {
+            color: $orange;
+        }
+    }
+    .order {
+        margin-top: 10px;
+        h2 {
+            font-style: italic;
+            color: $orange;
+            font-size: 18px;
+            font-weight: lighter;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/*VARS*/
+
+$orange: #d6391e;
+$purple: #513367;
+
+/*MIXINS*/
+
+@mixin hover {
+    opacity: 0.5;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@mixin image-center {
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin input {
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 8px;
+    padding-left: 40px;
+    padding-right: 100px;
+    position: relative;
+    color: silver;
+    font-weight: lighter;
+}
+
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* GERAL */
+
+body {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}

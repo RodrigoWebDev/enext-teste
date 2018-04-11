@@ -1,0 +1,21 @@
+/*POTIONS*/
+
+.potions {
+    span {
+        font-weight: lighter;
+        color: $orange;
+    }
+
+    img {
+        width: 60%;
+        @include image-center;
+    }
+
+    img:hover {
+        @include hover;
+    }
+    
+    .price{
+        color:$orange;
+    }
+}
