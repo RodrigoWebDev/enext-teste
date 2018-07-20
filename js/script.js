@@ -45,18 +45,18 @@ for (let i = 0; i < product.length; i++) {
     }(i));
 }
 
-//Uma loucura que eu fiz em Jquery misturado com Javascript puro :p. Aprendi na hora, então não me julgue kkk
-//Aqui aparentemente, o que eu fiz foi passar os dados do Json para os respectivos produtos
 $(document).ready(function () {
-    $.getJSON('potions.json', function(data) {
-        let nome = document.getElementsByClassName("name");
-        let price = document.getElementsByClassName("price");
-        let effect = document.getElementsByClassName("effect");
-        let igr = document.getElementsByClassName("ingr");
-        for(i = 0; i < 6; i++){
-            nome[i].innerHTML = data.potions[i + 1].name;
-            price[i].innerHTML = "$" + data.potions[i + 1].price;
-            effect[i].innerHTML = data.potions[i + 1].effect;
-        }
-    });
+   $.getJSON(
+       "potions.json",
+       function(data){
+           var d = data.potions;
+           var potions = $(".product");
+           console.log(d);
+           for( let i = 0; i < potions.length; i++){
+               $(".name").eq(i).text(d[i + 1].name);
+               $(".price").eq(i).text(d[i + 1].price);
+           }
+       }
+   )
+    
 });
